@@ -1,4 +1,5 @@
 import classes from './css/AvailableMeals.module.css'
+import Section from './../UI/Section';
 
 const DUMMY_MEALS = [
     {
@@ -30,7 +31,9 @@ const DUMMY_MEALS = [
 const AvailableMeals = () => {
 
     return (
-        <section className={classes.meals}>
+        <Section
+            className={classes.meals}
+        >
             <ul>
                 {DUMMY_MEALS.map( meal => {
                     return (
@@ -42,7 +45,7 @@ const AvailableMeals = () => {
                     )
                 })}
             </ul>
-        </section>
+        </Section>
     )
 }
 export default AvailableMeals;
