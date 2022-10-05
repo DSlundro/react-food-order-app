@@ -1,4 +1,4 @@
-import classes from './css/Card.module.css'
+import classes from './css/Cart.module.css'
 import Button from './../UI/Button';
 import Modal from './../UI/Modal';
 
