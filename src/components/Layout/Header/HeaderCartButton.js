@@ -6,7 +6,10 @@ import Button from './../../UI/Button';
 const HeaderCartButton = props => {
 
     return (
-        <Button className={classes.button}>
+        <Button 
+            event={props.onShowCart}
+            className={classes.button}
+        >
             <span className={classes.icon}>
                 <CartIcon />
             </span>

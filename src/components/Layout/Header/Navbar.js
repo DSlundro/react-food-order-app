@@ -6,7 +6,7 @@ const Navbar = props => {
     return (
         <header className={props.className}>
             <HeaderTitle />
-            <HeaderCartButton />
+            <HeaderCartButton onShowCart={props.onShowCart} />
         </header>
     )
 }

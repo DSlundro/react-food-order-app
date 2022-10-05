@@ -1,5 +1,6 @@
 import Input from '../UI/Input';
 import classes from './css/MealForm.module.css'
+import Button from './../UI/Button';
 
 
 const MealForm = props => {
@@ -17,7 +18,7 @@ const MealForm = props => {
                     defaultValue: '1'
                 }}
             />
-            <button>+ Add</button>
+            <Button>+ Add</Button>
         </form>
     )
 }
