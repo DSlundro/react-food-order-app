@@ -6,9 +6,7 @@ import Image from '../../UI/Image';
 const Header = props => {
     return (
         <header>
-            <Navbar
-                className={classes.header}
-            />
+            <Navbar className={classes.header} />
             <Image
                 className={classes['main-image']}
                 src={mealsImg} 
