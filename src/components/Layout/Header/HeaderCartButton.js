@@ -2,8 +2,15 @@
 import CartIcon from '../../Cart/CartIcon';
 import classes from './css/HeaderCartButton.module.css'
 import Button from './../../UI/Button';
+import { useContext } from 'react';
+import CartContext from './../../../store/cart-context';
 
 const HeaderCartButton = props => {
+    const cartCtx = useContext(CartContext);
+
+    const numberOfCardItems = cartCtx.items.reduce((curNumber, item) => {
+        return curNumber + item.amount
+    }, 0);
 
     return (
         <Button 
@@ -14,7 +21,7 @@ const HeaderCartButton = props => {
                 <CartIcon />
             </span>
             <span>Your Cart</span>
-            <span className={classes.badge}>3</span>
+            <span className={classes.badge}>{numberOfCardItems}</span>
         </Button>
     )
 }
